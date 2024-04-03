@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Packs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,22 +11,31 @@
             padding: 0;
         }
         header {
-            background-color: #333;
+            background-color: #2c3e50; /* Dark blue */
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            position: fixed;
+            top: 0;
+            width: calc(100% - 40px); /* Adjusted width to reduce horizontal bar */
+            left: 20px; /* Center the header */
+            z-index: 1000; /* Ensures header stays on top */
         }
         footer {
-            background-color: #333;
+            background-color: #34495e; /* Dark turquoise */
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
         }
         .content {
-            padding: 20px;
+            padding-top: 90px; /* Adjust padding to prevent content from being hidden under fixed header */
         }
         .image-container {
             margin-bottom: 20px;
